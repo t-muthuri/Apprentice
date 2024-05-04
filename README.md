@@ -5,7 +5,8 @@
 
 
 # Project Description
-Technical interview questions solutions
+Technical coding interview questions and solutions.
+
 This is a repo that provides solutions to various interview questions developers have come across.
 
 # Why
