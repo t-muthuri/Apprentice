@@ -1,4 +1,11 @@
+CONTRIBUTING
+
 # Contributing Guidelines
+
+## Steps for creating good issues or pull requests.
+## Links to external documentation, mailing lists, or a code of conduct.
+## Community and behavioral expectations.
+
 **how you can contribute**
 
 1. Post an interview question you have come across.
