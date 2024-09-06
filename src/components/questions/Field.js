@@ -37,9 +37,11 @@ function culcResult() {
 
   for (let i = 0; i < cardsDealt.length; i++) {
     points += cardsDealt[i];
-
   }
-  console.log(points);
+  
+  const score = (points*10);
+
+  console.log(score);
 
 }
 
