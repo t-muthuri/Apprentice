@@ -40,13 +40,19 @@ function culcResult() {
     console.log(score);
   } else if (cardsDealt.includes(0)) {
     let arr = cardsDealt;
-    console.log("arr:", arr);
     const maximum = arr.reduce((a, s) => Math.max(a, s));
-    console.log("max:", maximum);
     for (let i = 0; i < cardsDealt.length; i++) {
       points += cardsDealt[i];
     }
     const score = points - maximum;
+    console.log(score);
+  } else if (cardsDealt.includes(10 && 0)) {
+    let arr = cardsDealt;
+    const maximum = arr.reduce((a, s) => Math.max(a, s));
+    for (let i = 0; i < cardsDealt.length; i++) {
+      points += cardsDealt[i];
+    }
+    const score = (points - (10 + maximum)) * 10;
     console.log(score);
   } else {
     for (let i = 0; i < cardsDealt.length; i++) {
