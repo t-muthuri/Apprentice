@@ -35,6 +35,11 @@ function culcResult() {
 
   cardsDealt.push(randOne, randTwo, randThree, randFour, randFive);
 
+  if () {
+  
+  } else {
+    
+  }
   for (let i = 0; i < cardsDealt.length; i++) {
     points += cardsDealt[i];
   }
