@@ -19,6 +19,7 @@
 // Function culcResult ([‘1’, ‘4’, ‘5’, ‘9’, ‘2’]) -> 21pt
 
 // field card 0, 1, ... 10 | *10
+
 const fieldCard = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // *10
 
 function culcResult() {
