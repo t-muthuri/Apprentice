@@ -3,11 +3,6 @@
 // you add the card numbers picked and multiply the result by 10
 // the score is the result of the above calculation
 
-// for loop
-// append the cards picked to the array when they reach 5
-// when cardsDealt.length is less than 5, add a random number to the empty array
-// when the array gets to 5, terminate the loop
-
 // cards dealt to a player 0, 4, 5, 9 | *10
 // if 0 pick 4, 5, 9 << 0 max value to 0, * 10 if zero is picked remove the max value between 0-10
 // 4, 5, 0 | * 10
@@ -42,6 +37,16 @@ function culcResult() {
     }
 
     const score = (points - 10) * 10;
+    console.log(score);
+  } else if (cardsDealt.includes(0)) {
+    let arr = cardsDealt;
+    console.log("arr:", arr);
+    const maximum = arr.reduce((a, s) => Math.max(a, s));
+    console.log("max:", maximum);
+    for (let i = 0; i < cardsDealt.length; i++) {
+      points += cardsDealt[i];
+    }
+    const score = points - maximum;
     console.log(score);
   } else {
     for (let i = 0; i < cardsDealt.length; i++) {
