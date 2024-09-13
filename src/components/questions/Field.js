@@ -36,14 +36,19 @@ function culcResult() {
 
   cardsDealt.push(randOne, randTwo, randThree, randFour, randFive);
 
-  for (let i = 0; i < cardsDealt.length; i++) {
-    points += cardsDealt[i];
+  if (cardsDealt.includes(10)) {
+    for (let i = 0; i < cardsDealt.length; i++) {
+      points += cardsDealt[i];
+    }
+
+    const score = (points - 10) * 10;
+    console.log(score);
+  } else {
+    for (let i = 0; i < cardsDealt.length; i++) {
+      points += cardsDealt[i];
+    }
+    console.log(points);
   }
-  
-  const score = ((points-10)*10);
-
-  console.log(score);
-
 }
 
 culcResult();
